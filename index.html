@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">The Cosmic Ascent: Reclaiming the True Purpose of Salah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .arabic-text {
+            font-family: 'Amiri', serif;
+            direction: rtl;
+        }
+        /* Smooth transitions for translation layouts */
+        .lang-transition {
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-[#0B0F19] via-[#111827] to-[#030712] text-slate-200 min-h-screen relative antialiased transition-colors duration-500" id="main-body">
+
+    <div class="fixed top-0 left-0 w-full h-1 bg-gray-800 z-50">
+        <div id="progress-bar" class="h-full bg-gradient-to-r from-emerald-500 via-teal-400 to-indigo-500 w-0 transition-all duration-75"></div>
+    </div>
+
+    <div class="fixed top-4 right-4 z-40 flex items-center space-x-2">
+        <div class="bg-slate-800/80 backdrop-blur border border-slate-700/50 p-1 rounded-lg shadow-lg flex items-center gap-1">
+            <button onclick="setLanguage('en')" id="lang-en-btn" class="text-xs px-2.5 py-1.5 rounded-md font-medium transition-all bg-emerald-500 text-slate-900 shadow-sm">
+                EN
+            </button>
+            <button onclick="setLanguage('ar')" id="lang-ar-btn" class="text-xs px-2.5 py-1.5 rounded-md font-medium text-slate-400 hover:text-slate-200 transition-all">
+                العربية
+            </button>
+        </div>
+
+        <button onclick="toggleFocusMode()" id="focus-btn" class="bg-slate-800/80 backdrop-blur border border-slate-700/50 hover:border-teal-500 text-xs text-slate-300 font-medium px-3 py-2 rounded-lg shadow-lg flex items-center gap-1.5 transition-all">
+            ✨ <span id="focus-text">Focus Mode</span>
+        </button>
+    </div>
+
+    <header class="relative overflow-hidden py-24 md:py-32 border-b border-slate-800/40 lang-transition" id="hero-container">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-1/3 w-72 h-72 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none"></div>
+        
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <span id="hero-badge" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 uppercase tracking-widest mb-6">
+                Metaphysical Reality
+            </span>
+            <h1 id="hero-title" class="text-4xl md:text-6xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-100 to-slate-400 leading-tight mb-6">
+                The Cosmic Ascent
+            </h1>
+            <p id="hero-subtitle" class="text-emerald-400/90 text-lg md:text-xl font-medium tracking-wide uppercase max-w-2xl mx-auto mb-8">
+                Reclaiming the True Purpose of Salah
+            </p>
+            <div class="w-16 h-1 bg-gradient-to-r from-emerald-500 to-teal-400 mx-auto rounded-full"></div>
+        </div>
+    </header>
+
+    <main class="max-w-3xl mx-auto px-6 py-16 space-y-20 relative z-10 lang-transition" id="content-container">
+        
+        <section class="prose prose-invert max-w-none text-slate-300 text-base md:text-lg leading-relaxed space-y-6" id="sec-intro">
+            <p id="intro-p1">
+                We live in an age of hyper-optimization. We track our steps, optimize our sleep, and gamify our habits. In this rush to find utility in everything, we often subject our spiritual lives to the same corporate lens. We look at <span class="text-emerald-400 font-semibold italic">Salah</span> (prayer) and try to justify it as a "mindfulness hack," a "light physical workout," or a quick way to lower blood pressure.
+            </p>
+            <p id="intro-p2">
+                But reducing Salah to a clinical prescription or a physical fitness routine minimizes its true majesty. You do not step onto the prayer mat to get a light stretch or calm your nervous system; those are merely the incidental, physical footprints of a profound metaphysical reality.
+            </p>
+            <div class="bg-slate-900/60 border-l-4 border-indigo-500 p-6 rounded-r-xl my-8 shadow-inner" id="quote-wrapper">
+                <p class="text-xl font-medium text-slate-100 italic m-0" id="intro-quote">
+                    "You pray because your soul requires it."
+                </p>
+            </div>
+            <p class="text-slate-200" id="intro-p3">
+                To truly understand Salah is to look past the surface mechanics and view it for what it truly is: <strong id="intro-strong" class="text-transparent bg-clip-text bg-gradient-to-r from-white to-teal-300 font-bold">a deliberate, cosmic rupture in time.</strong>
+            </p>
+        </section>
+
+        <hr class="border-slate-800/60">
+
+        <section class="space-y-6">
+            <div class="flex items-center space-x-3 mb-4" id="title-block-1">
+                <span class="text-2xl">🌌</span>
+                <h2 id="h2-sec1" class="text-2xl md:text-3xl font-bold text-white tracking-tight">1. The Ultimate Ascent: Connection Over Ritual</h2>
+            </div>
+            
+            <div class="prose prose-invert max-w-none text-slate-300 leading-relaxed space-y-6" id="sec1-p-block">
+                <p id="sec1-p1">
+                    Salah is an invitation to step out of the linear rush of the material world and enter a private audience with the Master of the Cosmos.
+                </p>
+                <p id="sec1-p2">
+                    Classical scholars beautifully referred to Salah as <span class="italic text-teal-400">Mi’raj al-Mu’min</span>—the spiritual ascension of the believer. Just as the Prophet Muhammad (SAW) was physically transported through the heavens during the Night Journey (<em>Al-Isra' wal-Mi'raj</em>) to commune directly with Allah, you are granted a spiritual doorway to do the same five times every single day.
+                </p>
+                <p id="sec1-p3">
+                    When you stand in prayer, you are not merely reciting ancient words; you are speaking directly to the Creator of the universe, and He is responding to you. The Prophet (SAW) taught us this intimate reality in a profound <span class="text-indigo-400 font-medium">Hadith Qudsi</span>:
+                </p>
+            </div>
+
+            <div class="bg-gradient-to-br from-slate-900 via-[#131B2E] to-slate-900 border border-slate-800 p-8 rounded-2xl shadow-xl space-y-6 my-8">
+                <div class="text-right">
+                    <p class="arabic-text text-2xl md:text-3xl text-emerald-300 leading-loose tracking-wide font-medium">
+                        قَالَ اللَّهُ تَعَالَى: قَسَمْتُ الصَّلَاةَ بَيْنِي وَبَيْنَ عَبْدِي نِصْفَيْنِ، وَلِعَبْدِي مَا سَأَلَ
+                    </p>
+                </div>
+                <div class="border-t border-slate-800/80 pt-4">
+                    <p id="hadith-trans-1" class="text-slate-300 text-sm md:text-base italic leading-relaxed">
+                        "Allah the Exalted said: 'I have divided the prayer into two halves between Myself and My servant, and My servant shall have what he asks for.'"
+                    </p>
+                </div>
+                <div class="bg-black/30 p-4 rounded-xl text-xs md:text-sm text-slate-400 space-y-2">
+                    <p id="hadith-subtext-1">When the servant says: <span class="text-slate-200 font-medium italic">Al-hamdu lillahi rabbil-'alamin</span> (All praise is due to Allah, Lord of the worlds), Allah says:</p>
+                    <p class="text-right arabic-text text-xl text-teal-400 py-1">حَمِدَنِي عَبْدِي</p>
+                    <p class="italic text-slate-300" id="hadith-subtext-2">"My servant has praised Me." — (Sahih Muslim)</p>
+                </div>
+            </div>
+
+            <div class="bg-slate-900/50 border border-slate-800/80 rounded-2xl p-6 md:p-8 space-y-6">
+                <div id="explorer-header">
+                    <h3 id="explorer-badge" class="text-lg font-bold tracking-wide uppercase text-xs text-indigo-400 mb-1">Interactive Feature</h3>
+                    <h4 id="explorer-title" class="text-xl font-bold text-white">The Architecture of Surrender</h4>
+                    <p id="explorer-desc" class="text-slate-400 text-sm">Click on each internal posture state to unlock its deep metaphysical translation.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="posture-btn-grid">
+                    <button onclick="showPosture('qiyam')" id="btn-qiyam" class="posture-btn p-4 rounded-xl border border-slate-700 bg-slate-800 text-white shadow-md transition-all font-medium flex justify-between items-center hover:bg-slate-700">
+                        <span id="lbl-qiyam">Qiyam (Standing)</span>
+                        <span id="active-dot" class="text-xs text-teal-400">● Active</span>
+                    </button>
+                    <button onclick="showPosture('ruku')" id="btn-ruku" class="posture-btn p-4 rounded-xl border border-slate-800 bg-slate-900/40 text-slate-400 hover:text-slate-200 transition-all font-medium flex justify-between items-center hover:bg-slate-800/40">
+                        <span id="lbl-ruku">Ruku (Bowing)</span>
+                    </button>
+                    <button onclick="showPosture('sujood')" id="btn-sujood" class="posture-btn p-4 rounded-xl border border-slate-800 bg-slate-900/40 text-slate-400 hover:text-slate-200 transition-all font-medium flex justify-between items-center hover:bg-slate-800/40">
+                        <span id="lbl-sujood">Sujood (Prostration)</span>
+                    </button>
+                </div>
+
+                <div class="bg-black/40 border border-slate-800 p-5 rounded-xl min-h-[100px] flex items-center" id="posture-display-box">
+                    <p class="text-slate-300 text-base leading-relaxed" id="posture-text">
+                        <strong>Standing straight, eyes lowered, stripping away worldly status.</strong> You stand in utter awe and transparency before the All-Seeing Eye of your Creator.
+                    </p>
+                </div>
+
+                <div class="bg-emerald-950/20 border border-emerald-900/30 p-4 rounded-xl text-right">
+                    <p class="arabic-text text-xl text-emerald-300 mb-2">أَقْرَبُ مَا يَكُونُ الْعَبْدُ مِنْ رَبِّهِ وَهُوَ سَاجِدٌ، فَأَكْثِرُوا الدُّعَاءَ</p>
+                    <p id="hadith-trans-2" class="text-left text-xs md:text-sm text-slate-400 italic">"The nearest a servant comes to his Lord is when he is prostrating, so increase your supplication (in this state)." — (Sahih Muslim)</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-slate-800/60">
+
+        <section class="space-y-6">
+            <div class="flex items-center space-x-3 mb-4" id="title-block-2">
+                <span class="text-2xl">🌱</span>
+                <h2 id="h2-sec2" class="text-2xl md:text-3xl font-bold text-white tracking-tight">2. Anchoring the Disquieted Soul: Navigating the Struggle</h2>
+            </div>
+
+            <div class="prose prose-invert max-w-none text-slate-300 leading-relaxed space-y-6" id="sec2-p-block">
+                <p id="sec2-p1">
+                    Let’s be honest: maintaining absolute consistency in Salah can feel like an uphill battle. The modern world is engineered to fracture our attention span. When the <span class="text-slate-100 font-semibold">Adhan</span> (call to prayer) sounds, a heavy mental friction often sets in.
+                </p>
+                <p id="sec2-p2">
+                    If you struggle, know that you are not alone, and your struggle is not a sign of failure—it is the battleground of your faith. The trap of the devil (<em>Shaytan</em>) is to convince you that if your prayer isn't perfect, it isn't worth performing.
+                </p>
+                <p id="sec2-p3">
+                    Islam dismantles this perfectionist trap. The foundation of our spiritual economy relies entirely on the purity of our direction, not the flawless execution of the journey.
+                </p>
+
+                <div class="border-l-2 border-emerald-500 pl-4 py-1 my-6" id="intentions-badge-wrapper">
+                    <h3 id="intentions-title" class="text-lg font-bold text-white mb-2">Intentions Over Perfection</h3>
+                    <p id="intentions-desc" class="text-sm md:text-base text-slate-400">Think of the foundational principle of Islamic jurisprudence established by the Prophet (SAW):</p>
+                </div>
+            </div>
+
+            <div class="bg-[#111625] border border-slate-800 p-6 rounded-xl flex flex-col md:flex-row justify-between items-center gap-4" id="intentions-box">
+                <div class="bg-black/30 px-4 py-3 rounded-lg text-center w-full md:w-auto">
+                    <p class="arabic-text text-2xl text-emerald-400 font-medium">إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ</p>
+                </div>
+                <p id="hadith-trans-3" class="text-slate-300 text-sm md:text-base italic text-center md:text-left">
+                    "Actions are judged only by intentions." — (Sahih Al-Bukhari)
+                </p>
+            </div>
+
+            <p id="sec2-p4" class="text-slate-300 text-base md:text-lg leading-relaxed">
+                If you step onto the mat carrying the heavy weight of exhaustion, distraction, or a messy life, but you show up purely because you intend to obey your Lord, that effort is immensely heavy on the Divine scale. Allah is <span class="text-teal-400 font-semibold">Al-Shakur</span> (The Most Appreciative); He sees the silent friction you overcome just to make <em>Wudu</em> (ablution).
+            </p>
+            <p id="sec2-p5" class="text-slate-300 text-base md:text-lg leading-relaxed">
+                Start small. Secure one prayer. Protect it fiercely. Let that one anchor hold you firm until you have the strength to drop the next.
+            </p>
+        </section>
+
+        <hr class="border-slate-800/60">
+
+        <section class="space-y-6">
+            <div class="flex items-center space-x-3 mb-4" id="title-block-3">
+                <span class="text-2xl">🔒</span>
+                <h2 id="h2-sec3" class="text-2xl md:text-3xl font-bold text-white tracking-tight">3. The Gateway to Salvation: A Sovereign Boundary</h2>
+            </div>
+
+            <div class="prose prose-invert max-w-none text-slate-300 leading-relaxed space-y-6" id="sec3-p-block">
+                <p id="sec3-p1">
+                    Why is Salah deemed an absolute necessity? Why is it the first thing we will be questioned about on the Day of Judgment?
+                </p>
+                <p id="sec3-p2">
+                    Because human beings are inherently forgetful (<em>Insaan</em> comes from a root meaning 'to forget'). Left to our own devices, our egos swell. We begin to believe we are the masters of our own destiny, that our wealth is entirely our own doing, and that our time belongs solely to us.
+                </p>
+                <p id="sec3-p3">
+                    Salah is the ultimate equalizer. It forces a multi-millionaire, a high-level executive, and a manual laborer to stand shoulder-to-shoulder in the exact same dust, reciting the exact same words. It is a boundary line that safeguards our humanity.
+                </p>
+                <p id="sec3-p4">
+                    The Quran warns us with stark clarity about the consequences of letting this boundary slip, painting a vivid picture of the dialogue between the residents of Paradise and Hell:
+                </p>
+            </div>
+
+            <div class="bg-red-950/10 border border-red-900/30 p-6 md:p-8 rounded-2xl space-y-4">
+                <div class="text-right">
+                    <p class="arabic-text text-2xl md:text-3xl text-rose-400 font-semibold">
+                        مَا سَلَكَكُمْ فِي سَقَرَ ‎*‏ قَالُوا لَمْ نَكُ مِنَ الْمُصَلِّينَ
+                    </p>
+                </div>
+                <p id="quran-trans-1" class="text-slate-300 text-sm md:text-base italic border-t border-red-900/20 pt-4">
+                    "‘What admitted you into Hell?’ They will say, ‘We were not of those who prayed.’" — (Surah Al-Muddaththir, 74:42-43)
+                </p>
+            </div>
+        </section>
+
+        <hr class="border-slate-800/60">
+
+        <section class="space-y-6">
+            <div class="flex items-center space-x-3 mb-4" id="title-block-4">
+                <span class="text-2xl">🌿</span>
+                <h2 id="h2-sec4" class="text-2xl md:text-3xl font-bold text-white tracking-tight">4. Holistic Harmony: The Divine Byproduct</h2>
+            </div>
+
+            <div class="prose prose-invert max-w-none text-slate-300 leading-relaxed space-y-6" id="sec4-p-block">
+                <p id="sec4-p1">
+                    When we stop treating Salah like a physical health hack, an amazing thing happens: we unlock its true, holistic benefits.
+                </p>
+                <p id="sec4-p2">
+                    True well-being is not the <em>goal</em> of Salah; it is the natural, beautiful byproduct of a soul that has found peace with its Lord. When your spirit aligns with its divine purpose, your mind and body naturally follow suit.
+                </p>
+
+                <h3 id="h3-tuma" class="text-xl font-bold text-white mt-8 mb-2">The Peace of Tranquility (<span class="italic text-emerald-400">Tuma'ninah</span>)</h3>
+                <p id="sec4-p3">
+                    In Islamic jurisprudence, <em>Tuma'ninah</em> (tranquility/stillness in each posture) is an absolute requirement for a valid prayer. You cannot rush through it like a bird pecking at seeds. You must hold each position until your bones settle.
+                </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-slate-900 to-[#121E29] border border-slate-800 p-6 rounded-xl space-y-2">
+                <p class="arabic-text text-2xl text-teal-300 text-right font-medium">أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ</p>
+                <p id="quran-trans-2" class="text-sm text-slate-400 italic">"Unquestionably, by the remembrance of Allah hearts find rest." — (Surah Ar-Ra'd, 13:28)</p>
+            </div>
+
+            <div class="prose prose-invert max-w-none text-slate-300 leading-relaxed pt-4" id="sec4-p-block-2">
+                <h3 id="h3-wudu" class="text-xl font-bold text-white mb-2">Purification Inside and Out</h3>
+                <p id="sec4-p4">
+                    Even the physical prerequisite of prayer—Wudu—serves as a beautiful, multi-layered ritual of renewal. It isn't just about washing dirt off your skin; it is a physical shedding of spiritual burdens. The Prophet (SAW) captured this imagery perfectly:
+                </p>
+                <blockquote id="hadith-quote-block" class="border-l-4 border-teal-500 bg-slate-900/40 p-4 rounded-r-lg text-sm md:text-base italic text-slate-400">
+                    "When a Muslim servant performs ablution and washes his face, every sin he looked at with his eyes leaves his face with the water... when he washes his hands, every sin his hands committed leaves with the water... until he emerges pure from sins." — (Sahih Muslim)
+                </blockquote>
+            </div>
+        </section>
+
+        <section id="takeaway-box" class="mt-16 bg-gradient-to-t from-emerald-950/20 to-slate-900/80 border border-emerald-500/20 rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
+            <div class="absolute -right-8 -bottom-8 w-48 h-48 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none"></div>
+            <div class="relative z-10 space-y-6">
+                <div class="flex items-center space-x-2" id="takeaway-title-wrapper">
+                    <span class="text-xl">🧭</span>
+                    <h2 id="takeaway-title" class="text-2xl font-bold text-white">The Takeaway Reflection</h2>
+                </div>
+                <p id="takeaway-p1" class="text-slate-300 text-base md:text-lg leading-relaxed">
+                    The next time you hear the Adhan, try to shift your perspective.
+                </p>
+                <p id="takeaway-p2" class="text-slate-300 text-base md:text-lg leading-relaxed">
+                    Don't look at it as a chore to cross off an endless to-do list. Don't view it as a 10-minute disruption to your day.
+                </p>
+                <p id="takeaway-p3" class="text-emerald-300 font-medium text-lg md:text-xl leading-relaxed italic">
+                    View it as an escape hatch. Step out of the noise of a chaotic planet, stand before the Lord of the worlds, bow away your pride, and press your head to the earth to whisper your secrets to the One who created the universe, yet stops to listen directly to you.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-slate-900 py-12 text-center text-xs text-slate-600 relative z-10">
+        <p id="footer-text">© 2026 The Cosmic Ascent. Immersive Metaphysical Guide.</p>
+    </footer>
+
+    <script>
+        // Language Data Object Dictionary
+        const langData = {
+            en: {
+                dir: "ltr",
+                align: "text-left",
+                flexDir: "flex-row",
+                pageTitle: "The Cosmic Ascent: Reclaiming the True Purpose of Salah",
+                focusMode: "Focus Mode",
+                focusModeOn: "Focus Mode On",
+                heroBadge: "Metaphysical Reality",
+                heroTitle: "The Cosmic Ascent",
+                heroSubtitle: "Reclaiming the True Purpose of Salah",
+                introP1: 'We live in an age of hyper-optimization. We track our steps, optimize our sleep, and gamify our habits. In this rush to find utility in everything, we often subject our spiritual lives to the same corporate lens. We look at <span class="text-emerald-400 font-semibold italic">Salah</span> (prayer) and try to justify it as a "mindfulness hack," a "light physical workout," or a quick way to lower blood pressure.',
+                introP2: "But reducing Salah to a clinical prescription or a physical fitness routine minimizes its true majesty. You do not step onto the prayer mat to get a light stretch or calm your nervous system; those are merely the incidental, physical footprints of a profound metaphysical reality.",
+                introQuote: '"You pray because your soul requires it."',
+                introP3: 'To truly understand Salah is to look past the surface mechanics and view it for what it truly is: <strong class="text-transparent bg-clip-text bg-gradient-to-r from-white to-teal-300 font-bold">a deliberate, cosmic rupture in time.</strong>',
+                h2Sec1: "1. The Ultimate Ascent: Connection Over Ritual",
+                sec1P1: "Salah is an invitation to step out of the linear rush of the material world and enter a private audience with the Master of the Cosmos.",
+                sec1P2: "Classical scholars beautifully referred to Salah as <span class='italic text-teal-400'>Mi’raj al-Mu’min</span>—the spiritual ascension of the believer. Just as the Prophet Muhammad (SAW) was physically transported through the heavens during the Night Journey (<em>Al-Isra' wal-Mi'raj</em>) to commune directly with Allah, you are granted a spiritual doorway to do the same five times every single day.",
+                sec1P3: "When you stand in prayer, you are not merely reciting ancient words; you are speaking directly to the Creator of the universe, and He is responding to you. The Prophet (SAW) taught us this intimate reality in a profound <span class='text-indigo-400 font-medium'>Hadith Qudsi</span>:",
+                hadithTrans1: `"Allah the Exalted said: 'I have divided the prayer into two halves between Myself and My servant, and My servant shall have what he asks for.'"`,
+                hadithSubtext1: "When the servant says: <span class='text-slate-200 font-medium italic'>Al-hamdu lillahi rabbil-'alamin</span> (All praise is due to Allah, Lord of the worlds), Allah says:",
+                hadithSubtext2: '"My servant has praised Me." — (Sahih Muslim)',
+                explorerBadge: "Interactive Feature",
+                explorerTitle: "The Architecture of Surrender",
+                explorerDesc: "Click on each internal posture state to unlock its deep metaphysical translation.",
+                lblQiyam: "Qiyam (Standing)",
+                lblRuku: "Ruku (Bowing)",
+                lblSujood: "Sujood (Prostration)",
+                hadithTrans2: '"The nearest a servant comes to his Lord is when he is prostrating, so increase your supplication (in this state)." — (Sahih Muslim)',
+                h2Sec2: "2. Anchoring the Disquieted Soul: Navigating the Struggle",
+                sec2P1: "Let’s be honest: maintaining absolute consistency in Salah can feel like an uphill battle. The modern world is engineered to fracture our attention span. When the <span class='text-slate-100 font-semibold'>Adhan</span> (call to prayer) sounds, a heavy mental friction often sets in.",
+                sec2P2: "If you struggle, know that you are not alone, and your struggle is not a sign of failure—it is the battleground of your faith. The trap of the devil (<em>Shaytan</em>) is to convince you that if your prayer isn't perfect, it isn't worth performing.",
+                sec2P3: "Islam dismantles this perfectionist trap. The foundation of our spiritual economy relies entirely on the purity of our direction, not the flawless execution of the journey.",
+                intentionsTitle: "Intentions Over Perfection",
+                intentionsDesc: "Think of the foundational principle of Islamic jurisprudence established by the Prophet (SAW):",
+                hadithTrans3: '"Actions are judged only by intentions." — (Sahih Al-Bukhari)',
+                sec2P4: "If you step onto the mat carrying the heavy weight of exhaustion, distraction, or a messy life, but you show up purely because you intend to obey your Lord, that effort is immensely heavy on the Divine scale. Allah is <span class='text-teal-400 font-semibold'>Al-Shakur</span> (The Most Appreciative); He sees the silent friction you overcome just to make <em>Wudu</em> (ablution).",
+                sec2P5: "Start small. Secure one prayer. Protect it fiercely. Let that one anchor hold you firm until you have the strength to drop the next.",
+                h2Sec3: "3. The Gateway to Salvation: A Sovereign Boundary",
+                sec3P1: "Why is Salah deemed an absolute necessity? Why is it the first thing we will be questioned about on the Day of Judgment?",
+                sec3P2: "Because human beings are inherently forgetful (<em>Insaan</em> comes from a root meaning 'to forget'). Left to our own devices, our egos swell. We begin to believe we are the masters of our own destiny, that our wealth is entirely our own doing, and that our time belongs solely to us.",
+                sec3P3: "Salah is the ultimate equalizer. It forces a multi-millionaire, a high-level executive, and a manual laborer to stand shoulder-to-shoulder in the exact same dust, reciting the exact same words. It is a boundary line that safeguards our humanity.",
+                sec3P4: "The Quran warns us with stark clarity about the consequences of letting this boundary slip, painting a vivid picture of the dialogue between the residents of Paradise and Hell:",
+                quranTrans1: `"‘What admitted you into Hell?’ They will say, ‘We were not of those who prayed.’" — (Surah Al-Muddaththir, 74:42-43)`,
+                h2Sec4: "4. Holistic Harmony: The Divine Byproduct",
+                sec4P1: "When we stop treating Salah like a physical health hack, an amazing thing happens: we unlock its true, holistic benefits.",
+                sec4P2: "True well-being is not the <em>goal</em> of Salah; it is the natural, beautiful byproduct of a soul that has found peace with its Lord. When your spirit aligns with its divine purpose, your mind and body naturally follow suit.",
+                h3Tuma: "The Peace of Tranquility (<em>Tuma'ninah</em>)",
+                sec4P3: "In Islamic jurisprudence, <em>Tuma'ninah</em> (tranquility/stillness in each posture) is an absolute requirement for a valid prayer. You cannot rush through it like a bird pecking at seeds. You must hold each position until your bones settle.",
+                quranTrans2: `"Unquestionably, by the remembrance of Allah hearts find rest." — (Surah Ar-Ra'd, 13:28)`,
+                h3Wudu: "Purification Inside and Out",
+                sec4P4: "Even the physical prerequisite of prayer—Wudu—serves as a beautiful, multi-layered ritual of renewal. It isn't just about washing dirt off your skin; it is a physical shedding of spiritual burdens. The Prophet (SAW) captured this imagery perfectly:",
+                hadithQuoteBlock: `"When a Muslim servant performs ablution and washes his face, every sin he looked at with his eyes leaves his face with the water... when he washes his hands, every sin his hands committed leaves with the water... until he emerges pure from sins." — (Sahih Muslim)`,
+                takeawayTitle: "The Takeaway Reflection",
+                takeawayP1: "The next time you hear the Adhan, try to shift your perspective.",
+                takeawayP2: "Don't look at it as a chore to cross off an endless to-do list. Don't view it as a 10-minute disruption to your day.",
+                takeawayP3: "View it as an escape hatch. Step out of the noise of a chaotic planet, stand before the Lord of the worlds, bow away your pride, and press your head to the earth to whisper your secrets to the One who created the universe, yet stops to listen directly to you.",
+                footerText: "© 2026 The Cosmic Ascent. Immersive Metaphysical Guide.",
+                postures: {
+                    qiyam: "<strong>Standing straight, eyes lowered, stripping away worldly status.</strong> You stand in utter awe and transparency before the All-Seeing Eye of your Creator.",
+                    ruku: "<strong>Bending forward, lowering your gaze completely.</strong> This is the explicit physical declaration of ultimate reverence, deliberately shattering the back of human arrogance.",
+                    sujood: "<strong>Placing your forehead—the symbol of your intellect and ego—flat upon the lowest ground.</strong> In this absolute depth of physical humility, you hit your highest spiritual peak."
+                }
+            },
+            ar: {
+                dir: "rtl",
+                align: "text-right",
+                flexDir: "flex-row-reverse",
+                pageTitle: "السمو الكوني: استعادة الغاية الحقيقية من الصلاة",
+                focusMode: "وضع التركيز",
+                focusModeOn: "وضع التركيز نشط",
+                heroBadge: "الحقيقة الميتافيزيقية",
+                heroTitle: "السمو الكوني",
+                heroSubtitle: "استعادة الغاية الحقيقية والعميقة من الصلاة",
+                introP1: 'إننا نعيش في عصر التحسين المفرط؛ نتتبع خطواتنا، ونحسن نومنا، ونحول عاداتنا إلى ألعاب رقمية. وفي هذا الاندفاع المحموم لإيجاد منفعة مادية في كل شيء، غالبًا ما نخضع حياتنا الروحية لنفس المنظور المادي الضيق. ننظر إلى <span class="text-emerald-400 font-semibold italic">الصلاة</span> ونحاول تبريرها كـ "حيلة لزيادة اليقظة الذهنية"، أو "تمرين بدني خفيف"، أو وسيلة سريعة لخفض ضغط الدم.',
+                introP2: "لكن اختزال الصلاة في وصفة طبية أو روتين لياقة بدنية يقلل من جلالها الحقيقي. إنك لا تخطو على سجادة الصلاة لتحصل على تمدد خفيف أو لتهدئة جهازك العصبي؛ فهذه مجرد آثار بدنية عرضية لحقيقة ميتافيزيقية عميقة الأثر.",
+                introQuote: '"إنك تصلي لأن روحك تحتاج وتفتقر إلى ذلك."',
+                introP3: 'لكي تفهم الصلاة حقًا، يجب أن تنظر إلى ما وراء الحركات السطحية الميكانيكية وتراها على حقيقتها: <strong class="text-transparent bg-clip-text bg-gradient-to-r from-white to-teal-300 font-bold">تمزق كوني متعمد في نسيج الوقت والزمن.</strong>',
+                h2Sec1: "١. السمو الأسمى: صلة لا مجرد طقوس ميكانيكية",
+                sec1P1: "الصلاة هي دعوة صريحة للخروج من الاندفاع الخطي للعالم المادي والدخول في مناجاة خاصة مع مالك هذا الكون الفسيح ومبدعه.",
+                sec1P2: "لقد وصف العلماء الصلاة بجميل العبارة بأنها <span class='italic text-teal-400'>معراج المؤمن</span> — السمو الروحي للعبد. فكما نُقل النبي محمد ﷺ بجسده وروحه عبر السماوات العلى في رحلة الإسراء والمعراج ليتصل مباشرة بالله عز وجل، فقد مُنحت بابًا روحيًا تفعل فيه الأمر عينه خمس مرات كل يوم.",
+                sec1P3: "عندما تقف في الصلاة، فإنك لا تردد كلمات قديمة مكررة؛ بل إنك تخاطب خالق الكون مباشرة، وهو سبحانه يرد عليك ويناجيك. وقد علمنا النبي ﷺ هذه الحقيقة البديعة القريبة في <span class='text-indigo-400 font-medium'>حديث قدسي</span> جليل:",
+                hadithTrans1: `"قال الله تعالى: قَسَمْتُ الصَّلَاةَ بَيْنِي وَبَيْنَ عَبْدِي نِصْفَيْنِ، وَلِعَبْدِي مَا سَأَلَ"`,
+                hadithSubtext1: "فإذا قال العبد: <span class='text-slate-200 font-medium italic'>الحمد لله رب العالمين</span>، قال الله جل جلاله:",
+                hadithSubtext2: '"حمدني عبدي" — (صحيح مسلم)',
+                explorerBadge: "خاصية تفاعلية للتدبر",
+                explorerTitle: "هندسة الخضوع والافتغار",
+                explorerDesc: "انقر فوق كل حالة من حالات الهيئات والركائز البدنية لتكتشف ترجمتها الميتافيزيقية العميقة.",
+                lblQiyam: "القيام (الوقوف)",
+                lblRuku: "الركوع (الانحناء)",
+                lblSujood: "السجود (التذلل والافتغار)",
+                hadithTrans2: '"أقرب ما يكون العبد من ربه وهو ساجد، فأكثروا الدعاء" — (صحيح مسلم)',
+                h2Sec2: "٢. تثبيت الروح المضطربة: مجاهدة النفس في الالتزام",
+                sec2P1: "لنكن صادقين مع أنفسنا: الحفاظ على الاتساق والانتظام المطلق في الصلاة قد يبدو أحيانًا كمعركة شاقة. لقد هُندس العالم الحديث ليمزق انتباهنا، وعندما يرتفع صوت الأذان، غالبًا ما ينشأ ثقل ومقاومة ذهنية داخلية كبيرة.",
+                sec2P2: "إذا كنت تجاهد وتجد صعوبة، فاعلم أنك لست وحدك، وأن مجاهدتك ليست دليلاً على الفشل — بل هي أرض المعركة الحقيقية لإيمانك. إن فخ الشيطان الأكبر هو إقناعك بأنه إن لم تكن صلاتك كاملة خاشعة، فلا قيمة لأدائها.",
+                sec2P3: "الإسلام يفكك هذا الفخ تمامًا؛ إن أساس اقتصادنا الروحي يعتمد كليًا على طهارة واتجاه بوصلتك، لا على التنفيذ الخالي من العيوب للرحلة.",
+                intentionsTitle: "النية والاتجاه قبل المثالية",
+                intentionsDesc: "تأمل في الأصل الراسخ للفقه الإسلامي الذي وضعه لنا النبي المصطفى ﷺ:",
+                hadithTrans3: '"إنما الأعمال بالنيات" — (صحيح البخاري)',
+                sec2P4: "إذا خطوت نحو السجادة وأنت تحمل الأثقال الكبيرة من الإرهاق، أو التشتت، أو الفوضى الحياتية، لكنك أقبلت لمجرد طاعة ربك، فإن هذا الجهد ثقيل جدًا في الميزان الإلهي. إن الله هو <span class='text-teal-400 font-semibold'>الشكور</span>؛ يرى العناء الصامت الذي تتغلب عليه بمجرد وضوئك.",
+                sec2P5: "ابدأ صغيرًا؛ ثبّت صلاة واحدة وحافظ عليها بضراوة وقوة، واجعل ذلك المرساة الوحيدة التي تمسك بك وتثبتك حتى تملك القوة لإنزال المرساة التالية.",
+                h2Sec3: "٣. بوابة النجاة: الحد السيادي الفاصل",
+                sec3P1: "لماذا تُعتبر الصلاة ضرورة مطلقة؟ ولماذا هي أول ما نُسأل عنه ونحاسب عليه يوم القيامة؟",
+                sec3P2: "لأن الإنسان جُبل على النسيان والغفلة بطبيعته، وإذا تُرِكنا لأنفسنا، تضخمت الأنا داخلنا، وبدأنا نعتقد واهمين أننا أسياد مصيرنا، وأن أموالنا هي من كسبنا الصرف، وأن أوقاتنا ملك لنا وحدنا.",
+                sec3P3: "الصلاة هي الميزان والملجأ العادل؛ تُجبر الملياردير, والمدير التنفيذي، والعامل البسيط على الوقوف كتفًا بكتف في نفس التراب، وترديد نفس الكلمات. إنها الحد الحامي الفاصل لإنسانيتنا.",
+                sec3P4: "ويحذرنا القرآن الكريم بوضوح تام من عواقب التفريط في هذا الحد، واصفًا الحوار الجاري بين أهل الجنة وأهل السعير:",
+                quranTrans1: `"«مَا سَلَكَكُمْ فِي سَقَرَ * قَالُوا لَمْ نَكُ مِنَ الْمُصَلِّينَ» — (سورة المدثر، ٤٢-٤٣)"`,
+                h2Sec4: "٤. التناغم الشامل: الثمرة الإلهية التبعية",
+                sec4P1: "عندما نتوقف عن معاملة الصلاة كـ 'حيلة بدنية'، يحدث شيء مذهل: تتفتح وتظهر لنا فوائدها الشاملة والكاملة للروح والبدن معًا.",
+                sec4P2: "الراحة النفسية والجسدية ليست هي *الهدف الأساسي* من الصلاة؛ بل هي النتيجة الطبيعية البديعة لروح وجدت سكينتها وسلامها وأمنها عند ربها ومولاها. عندما تتوافق روحك مع غايتها، يتبعها عقلك وجسدك تلقائيًا.",
+                h3Tuma: "طُمأنينة السلام والهدوء (<em>الطمأنينة</em>)",
+                sec4P3: "في الفقه الإسلامي، تُعد الطمأنينة والهدوء في كل ركن وهيئة شرطًا أساسيًا لصحة الصلاة. لا يمكنك الإسراع فيها كنقر الطير؛ بل يجب عليك التمهل والوقوف في كل موضع حتى تستقر عظامك وجوارحك.",
+                quranTrans2: `"«أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ» — (سورة الرعد، ٢٨)"`,
+                h3Wudu: "الطهور الباطني والظاهري للعبد",
+                sec4P4: "حتى الشرط البدني المسبق للصلاة — وهو الوضوء — يُعد بمثابة طقس رائع ومتعدد الطبقات للتجديد والطهور. فالأمر لا يتعلق فقط بغسل الأوساخ المادية؛ بل هو تساقط حقيقي للأوزار الروحية الخفية كما بين لنا النبي ﷺ:",
+                hadithQuoteBlock: `"إذا توضأ العبد المسلم فغسل وجهه خرج من وجهه كل خطيئة نظر إليها بعينيه مع الماء... فإذا غسل يديه خرج من يديه كل خطيئة بطشتها يداه مع الماء... حتى يخرج نقيًا من الذنوب" — (صحيح مسلم)`,
+                takeawayTitle: "تأملات الختام",
+                takeawayP1: "في المرة القادمة التي تسمع فيها صوت الأذان، حاول جاهدًا أن تغير منظورك بالكامل.",
+                takeawayP2: "لا تنظر إليها كعبء ثقيل تريد التخلص منه في قائمة مهامك؛ ولا تظنها مجرد انقطاع مزعج لمدة ١٠ دقائق عن مشاغل يومك.",
+                takeawayP3: "بل انظر إليها كبوابة نجاة وممر هروب؛ اخرج بها من ضوضاء كوكب الأرض الفوضوي، وقف أمام ملك الملوك وخالق هذا الوجود، وانحنِ واطرح كبرياءك، وضع جبهتك على الأرض لتهمس بأسرارك لمن خلق هذا الكون كله، ولكنه سبحانه يتوقف ليسمعك أنت وحدك.",
+                footerText: "© ٢٠٢٦ السمو الكوني. دليل ميتافيزيقي غامر.",
+                postures: {
+                    qiyam: "<strong>الوقوف المستقيم مع خفض البصر وتجريد النفس من المكانة الدنيوية الموقتة.</strong> إنك تقف في حالة من الذهول التام والشفافية أمام عين الخالق سبحانه البصير العليم.",
+                    ruku: "<strong>الانحناء التام للأمام وخفض الرأس.</strong> هذا هو الإعلان المادي الصريح عن الإجلال المطلق، الذي يكسر كبرياء الإنسان وغروره المعنوي.",
+                    sujood: "<strong>وضع جبهتك — وهي رمز عقلك وعزتك وأنايتك — منبسطة على الأرض السفلى.</strong> وفي هذا العمق المطلق من التذلل المادي، تصل إلى أعلى قمة روحية ممكنة لك."
+                }
+            }
+        };
+
+        // Track Current Selected Language State
+        let currentLang = 'en';
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            const data = langData[lang];
+            
+            // 1. Core Page Meta Document Updating
+            document.getElementById('page-title').innerText = data.pageTitle;
+            document.documentElement.lang = lang;
+            
+            // 2. Structural Direction Elements Layout Swapping
+            const contentContainer = document.getElementById('content-container');
+            const heroContainer = document.getElementById('hero-container');
+            const quoteWrapper = document.getElementById('quote-wrapper');
+            const intentionsBox = document.getElementById('intentions-box');
+            
+            if (lang === 'ar') {
+                contentContainer.style.direction = "rtl";
+                heroContainer.style.direction = "rtl";
+                contentContainer.classList.add('arabic-text');
+                heroContainer.classList.add('arabic-text');
+                
+                // Swap text alignment classes
+                contentContainer.classList.remove('text-left');
+                contentContainer.classList.add('text-right');
+                
+                // Quote Layout Border swapping for RTL
+                quoteWrapper.classList.remove('border-l-4', 'border-indigo-500', 'rounded-r-xl');
+                quoteWrapper.classList.add('border-r-4', 'border-indigo-500', 'rounded-l-xl', 'text-right');
+                
+                // Hadith Layout dynamic arrangement
+                intentionsBox.classList.remove('md:flex-row');
+                intentionsBox.classList.add('md:flex-row-reverse');
+            } else {
+                contentContainer.style.direction = "ltr";
+                heroContainer.style.direction = "ltr";
+                contentContainer.classList.remove('arabic-text');
+                heroContainer.classList.remove('arabic-text');
+                
+                contentContainer.classList.remove('text-right');
+                contentContainer.classList.add('text-left');
+                
+                quoteWrapper.classList.add('border-l-4', 'border-indigo-500', 'rounded-r-xl');
+                quoteWrapper.classList.remove('border-r-4', 'border-indigo-500', 'rounded-l-xl', 'text-right');
+                
+                intentionsBox.classList.add('md:flex-row');
+                intentionsBox.classList.remove('md:flex-row-reverse');
+            }
+
+            // Toggle active state buttons visual UI
+            if (lang === 'ar') {
+                document.getElementById('lang-ar-btn').className = "text-xs px-2.5 py-1.5 rounded-md font-medium bg-emerald-500 text-slate-900 shadow-sm";
+                document.getElementById('lang-en-btn').className = "text-xs px-2.5 py-1.5 rounded-md font-medium text-slate-400 hover:text-slate-200 transition-all";
+            } else {
+                document.getElementById('lang-en-btn').className = "text-xs px-2.5 py-1.5 rounded-md font-medium bg-emerald-500 text-slate-900 shadow-sm";
+                document.getElementById('lang-ar-btn').className = "text-xs px-2.5 py-1.5 rounded-md font-medium text-slate-400 hover:text-slate-200 transition-all";
+            }
+
+            // 3. Injecting Translated Strings Into DOM Nodes
+            document.getElementById('focus-text').innerText = focusModeActive ? data.focusModeOn : data.focusMode;
+            document.getElementById('hero-badge').innerText = data.heroBadge;
+            document.getElementById('hero-title').innerText = data.heroTitle;
+            document.getElementById('hero-subtitle').innerText = data.heroSubtitle;
+            
+            document.getElementById('intro-p1').innerHTML = data.introP1;
+            document.getElementById('intro-p2').innerText = data.introP2;
+            document.getElementById('intro-quote').innerText = data.introQuote;
+            document.getElementById('intro-strong').innerHTML = data.introParagraphStrong || data.introStrong;
+            
+            document.getElementById('h2-sec1').innerText = data.h2Sec1;
+            document.getElementById('sec1-p1').innerText = data.sec1P1;
+            document.getElementById('sec1-p2').innerHTML = data.sec1P2;
+            document.getElementById('sec1-p3').innerHTML = data.sec1P3;
+            
+            document.getElementById('hadith-trans-1').innerText = data.hadithTrans1;
+            document.getElementById('hadith-subtext-1').innerHTML = data.hadithSubtext1;
+            document.getElementById('hadith-subtext-2').innerText = data.hadithSubtext2;
+            
+            document.getElementById('explorer-badge').innerText = data.explorerBadge;
+            document.getElementById('explorer-title').innerText = data.explorerTitle;
+            document.getElementById('explorer-desc').innerText = data.explorerDesc;
+            
+            document.getElementById('lbl-qiyam').innerText = data.lblQiyam;
+            document.getElementById('lbl-ruku').innerText = data.lblRuku;
+            document.getElementById('lbl-sujood').innerText = data.lblSujood;
+            document.getElementById('hadith-trans-2').innerText = data.hadithTrans2;
+            
+            document.getElementById('h2-sec2').innerText = data.h2Sec2;
+            document.getElementById('sec2-p1').innerHTML = data.sec2P1;
+            document.getElementById('sec2-p2').innerHTML = data.sec2P2;
+            document.getElementById('sec2-p3').innerHTML = data.sec2P3;
+            document.getElementById('intentions-title').innerText = data.intentionsTitle;
+            document.getElementById('intentions-desc').innerText = data.intentionsDesc;
+            document.getElementById('hadith-trans-3').innerText = data.hadithTrans3;
+            document.getElementById('sec2-p4').innerHTML = data.sec2P4;
+            document.getElementById('sec2-p5').innerText = data.sec2P5;
+            
+            document.getElementById('h2-sec3').innerText = data.h2Sec3;
+            document.getElementById('sec3-p1').innerText = data.sec3P1;
+            document.getElementById('sec3-p2').innerHTML = data.sec3P2;
+            document.getElementById('sec3-p3').innerText = data.sec3P3;
+            document.getElementById('sec3-p4').innerText = data.sec3P4;
+            document.getElementById('quran-trans-1').innerText = data.quranTrans1;
+            
+            document.getElementById('h2-sec4').innerText = data.h2Sec4;
+            document.getElementById('sec4-p1').innerText = data.sec4P1;
+            document.getElementById('sec4-p2').innerText = data.sec4P2;
+            document.getElementById('h3-tuma').innerHTML = data.h3Tuma;
+            document.getElementById('sec4-p3').innerHTML = data.sec4P3;
+            document.getElementById('quran-trans-2').innerText = data.quranTrans2;
+            document.getElementById('h3-wudu').innerText = data.h3Wudu;
+            document.getElementById('sec4-p4').innerHTML = data.sec4P4;
+            document.getElementById('hadith-quote-block').innerText = data.hadithQuoteBlock;
+            
+            document.getElementById('takeaway-title').innerText = data.takeawayTitle;
+            document.getElementById('takeaway-p1').innerText = data.takeawayP1;
+            document.getElementById('takeaway-p2').innerText = data.takeawayP2;
+            document.getElementById('takeaway-p3').innerText = data.takeawayP3;
+            document.getElementById('footer-text').innerText = data.footerText;
+            
+            // Default reset view of interactive box to match correct language payload
+            showPosture('qiyam');
+        }
+
+        function showPosture(key) {
+            // Fetch configuration matrix out of currently selected translation key
+            document.getElementById('posture-text').innerHTML = langData[currentLang].postures[key];
+            
+            // Re-style buttons actively
+            const buttons = document.querySelectorAll('.posture-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-slate-800', 'text-white', 'border-slate-700');
+                btn.classList.add('bg-gradient-to-r', 'bg-slate-900/40', 'text-slate-400', 'border-slate-800');
+                const badge = btn.querySelector('.status-dot');
+                if (badge) badge.remove();
+            });
+
+            const activeBtn = document.getElementById(`btn-${key}`);
+            activeBtn.classList.add('bg-slate-800', 'text-white', 'border-slate-700');
+            activeBtn.classList.remove('bg-slate-900/40', 'text-slate-400', 'border-slate-800');
+            
+            const dot = document.createElement('span');
+            dot.className = "status-dot text-xs text-teal-400";
+            dot.innerText = currentLang === 'ar' ? "● نشط" : "● Active";
+            activeBtn.appendChild(dot);
+        }
+
+        // Top Scroll Progress Monitoring logic
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progress-bar').style.width = scrolled + "%";
+        });
+
+        // Focus mode view toggler
+        let focusModeActive = false;
+        function toggleFocusMode() {
+            focusModeActive = !focusModeActive;
+            const body = document.getElementById('main-body');
+            const btn = document.getElementById('focus-btn');
+            const text = document.getElementById('focus-text');
+
+            if (focusModeActive) {
+                body.classList.remove('from-[#0B0F19]', 'via-[#111827]', 'to-[#030712]');
+                body.classList.add('from-[#05070B]', 'to-[#090D1A]');
+                btn.classList.add('border-emerald-500', 'bg-emerald-950/40');
+                text.innerText = langData[currentLang].focusModeOn;
+            } else {
+                body.classList.remove('from-[#05070B]', 'to-[#090D1A]');
+                body.classList.add('from-[#0B0F19]', 'via-[#111827]', 'to-[#030712]');
+                btn.classList.remove('border-emerald-500', 'bg-emerald-950/40');
+                text.innerText = langData[currentLang].focusMode;
+            }
+        }
+    </script>
+</body>
+</html>
