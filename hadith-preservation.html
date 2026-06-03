@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">The Epistemic Network: Hadith Preservation Framework</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .arabic-text { font-family: 'Amiri', serif; direction: rtl; }
+        .lang-transition { transition: all 0.3s ease-in-out; }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-[#0B0F19] via-[#111827] to-[#030712] text-slate-200 min-h-screen relative antialiased transition-colors duration-500" id="main-body">
+
+    <!-- Reading Progress Bar -->
+    <div class="fixed top-0 left-0 w-full h-1 bg-gray-800 z-50">
+        <div id="progress-bar" class="h-full bg-gradient-to-r from-emerald-500 via-teal-400 to-indigo-500 w-0 transition-all duration-75"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <div id="nav-header" class="fixed top-4 left-4 right-4 z-40 flex items-center justify-between pointer-events-none">
+        <div class="pointer-events-auto bg-slate-800/80 backdrop-blur border border-slate-700/50 text-xs text-slate-300 font-bold px-3 py-2 rounded-lg shadow-lg flex items-center gap-1.5 tracking-wider uppercase">
+            <span>🛡️</span> <span id="brand-text">Haq Musalli Portal</span>
+        </div>
+
+        <div class="flex items-center space-x-2 pointer-events-auto">
+            <div class="bg-slate-800/80 backdrop-blur border border-slate-700/50 p-1 rounded-lg shadow-lg flex items-center gap-1">
+                <button onclick="setLanguage('en')" id="lang-en-btn" class="text-xs px-2.5 py-1.5 rounded-md font-medium transition-all bg-emerald-500 text-slate-900 shadow-sm">EN</button>
+                <button onclick="setLanguage('fr')" id="lang-fr-btn" class="text-xs px-2.5 py-1.5 rounded-md font-medium text-slate-400 hover:text-slate-200 transition-all">FR</button>
+                <button onclick="setLanguage('ar')" id="lang-ar-btn" class="text-xs px-2.5 py-1.5 rounded-md font-medium text-slate-400 hover:text-slate-200 transition-all">العربية</button>
+            </div>
+            <button onclick="toggleFocusMode()" id="focus-btn" class="bg-slate-800/80 backdrop-blur border border-slate-700/50 hover:border-indigo-500 text-xs text-slate-300 font-medium px-3 py-2 rounded-lg shadow-lg flex items-center gap-1.5 transition-all">
+                ✨ <span id="focus-text">Focus Mode</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Hero Header -->
+    <header class="relative overflow-hidden py-20 border-b border-slate-800/40 lang-transition" id="hero-container">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <span id="hero-badge" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 uppercase tracking-widest mb-6">
+                Module 03 Deep Dive
+            </span>
+            <h1 id="hero-title" class="text-3xl md:text-5xl font-extrabold tracking-tight text-white leading-tight mb-4">
+                The Epistemic Network
+            </h1>
+            <p id="hero-subtitle" class="text-slate-400 text-sm md:text-base max-w-2xl mx-auto mb-6">
+                Deconstructing Hadith rejection frameworks through systemic data verification and structural integration of revelation.
+            </p>
+            <div class="w-16 h-1 bg-gradient-to-r from-indigo-500 to-teal-400 mx-auto rounded-full"></div>
+        </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-10 lang-transition" id="content-container">
+        
+        <!-- BACK TO PORTAL LINK -->
+        <div class="text-left" id="back-link-container">
+            <a href="index.html" class="inline-flex items-center text-xs font-semibold text-indigo-400 hover:text-indigo-300 transition-colors gap-1">
+                ← <span id="back-link">Return to Knowledge Hub Dashboard</span>
+            </a>
+        </div>
+
+        <!-- PILLAR 1: THE DIVINE PREDICTIONS -->
+        <section class="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-6 md:p-8 space-y-6">
+            <div class="flex items-center justify-between border-b border-slate-800/80 pb-4" id="p1-header-flex">
+                <h2 id="p1-title" class="text-xl font-bold text-white flex items-center gap-2">🛡️ 1. The Prophetic Premonition</h2>
+                <span class="text-xs bg-slate-800 text-slate-400 px-2 py-1 rounded">Sunan Ibn Majah</span>
+            </div>
+            <p id="p1-desc" class="text-sm text-slate-400 leading-relaxed">
+                The text architecture itself anticipated the emergence of absolute skepticism toward contextual data preservation models.
+            </p>
+            <!-- Embedded Arabic Script Textbox Container -->
+            <div class="bg-slate-950 border-l-2 border-indigo-500 rounded-r-xl p-4 my-4 space-y-3">
+                <p class="arabic-text text-xl md:text-2xl text-indigo-300 font-medium leading-loose text-right">
+                    "يُوشِكُ الرَّجُلُ مُتَّكِئًا عَلَى أَرِيكَتِهِ يُحَدَّثُ بِحَدِيثٍ مِنْ حَدِيثِي فَيَقُولُ بَيْنَنَا وَبَيْنَكُمْ كِتَابُ اللَّهِ عَزَّ وَجَلَّ فَمَا وَجَدْنَا فِيهِ مِنْ حَلَالٍ اسْتَحْلَلْنَاهُ وَمَا وَجَدْنَا فِيهِ مِنْ حَرَامٍ حَرَّمْنَاهُ أَلاَ وَإِنَّ مَا حَرَّمَ رَسُولُ اللَّهِ مِثْلُ مَا حَرَّمَ اللَّهُ"
+                </p>
+                <hr class="border-slate-800/60">
+                <p id="p1-translation" class="text-xs italic text-slate-400 leading-relaxed">
+                    "Soon there will be a man reclining on his couch, who will be told a Hadith from me, and he will say: 'Between us and you is the Book of Allah, the Mighty and Sublime. What we find in it to be lawful, we take as lawful, and what we find to be unlawful, we take as unlawful.' Behold! What the Messenger of Allah has forbidden is like what Allah has forbidden."
+                </p>
+            </div>
+        </section>
+
+        <!-- PILLAR 2: HIKMAH (THE EXPENDABLE REVELATION ARCHITECTURE) -->
+        <section class="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-6 md:p-8 space-y-6">
+            <div class="flex items-center justify-between border-b border-slate-800/80 pb-4" id="p2-header-flex">
+                <h2 id="p2-title" class="text-xl font-bold text-white flex items-center gap-2">📖 2. The Structural Mechanics of Hikmah</h2>
+                <span class="text-xs bg-slate-800 text-slate-400 px-2 py-1 rounded">Surah Al-Baqarah 2:151</span>
+            </div>
+            <p id="p2-desc" class="text-sm text-slate-400 leading-relaxed">
+                The linguistic framework of the Quran separates structural letters from practical definitions. The word "Al-Kitab" (The Book) is paired concurrently with "Al-Hikmah" (The Wisdom), establishing two distinct vectors of divine inspiration.
+            </p>
+            <div class="bg-slate-950 border-l-2 border-teal-500 rounded-r-xl p-4 my-4 space-y-3">
+                <p class="arabic-text text-xl md:text-2xl text-teal-300 font-medium leading-loose text-right">
+                    "كَمَا أَرْسَلْنَا فِيكُمْ رَسُولًا مِّنكُمْ يَتْلُو عَلَيْكُمْ آيَاتِنَا وَيُزَكِّيكُمْ وَيُعَلِّمُكُمُ الْكِتَابَ وَالْحِكْمَةَ وَيُعَلِّمُكُم مَّا لَمْ تَكُونُوا تَعْلَمُونَ"
+                </p>
+                <hr class="border-slate-800/60">
+                <p id="p2-translation" class="text-xs italic text-slate-400 leading-relaxed">
+                    "Similarly, We have sent among you a Messenger from among yourselves, reciting to you Our verses and purifying you, and teaching you the Book and Wisdom, and teaching you that which you did not know."
+                </p>
+            </div>
+        </section>
+
+        <!-- PILLAR 3: THE PARADOX OF IMPLEMENTATION -->
+        <section class="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-6 md:p-8 space-y-4">
+            <div class="border-b border-slate-800/80 pb-4">
+                <h2 id="p3-title" class="text-xl font-bold text-white flex items-center gap-2">🔄 3. Operational Mechanics vs. Abstract Generalization</h2>
+            </div>
+            <p id="p3-desc" class="text-sm text-slate-400 leading-relaxed">
+                A core systemic vulnerability within the Hadith rejection model is the operational deployment of baseline rituals. The Quran establishes structural requirements, while the Sunnah provides the exact execution criteria:
+            </p>
+            
+            <!-- Interactive Multi-Data Checklist Matrix Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+                <div class="bg-slate-950 p-4 rounded-xl border border-slate-800/80 text-center space-y-2">
+                    <div class="text-emerald-400 font-bold text-lg">🔒 Salah</div>
+                    <p id="m-salah" class="text-xs text-slate-400">Quran establishes the mandate of prayer; Hadith defines the precise sequential physical movements and structural timing configurations.</p>
+                </div>
+                <div class="bg-slate-950 p-4 rounded-xl border border-slate-800/80 text-center space-y-2">
+                    <div class="text-teal-400 font-bold text-lg">💎 Zakah</div>
+                    <p id="m-zakah" class="text-xs text-slate-400">Quran demands financial purification; Hadith provides the strict dynamic threshold parameters (Nisab) and computation matrix models.</p>
+                </div>
+                <div class="bg-slate-950 p-4 rounded-xl border border-slate-800/80 text-center space-y-2">
+                    <div class="text-indigo-400 font-bold text-lg">🕋 Hajj</div>
+                    <p id="m-hajj" class="text-xs text-slate-400">Quran outlines destination obligations; Hadith acts as the execution map template, charting structural rules of circumambulation.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PILLAR 4: THE EPISTEMIC NETWORKING TRAP -->
+        <section class="bg-gradient-to-br from-slate-950 to-[#111625] border border-slate-800/80 rounded-2xl p-6 md:p-8 space-y-4">
+            <h2 id="p4-title" class="text-xl font-bold text-white flex items-center gap-2">🧬 4. The Unified Transmission Dilemma</h2>
+            <p id="p4-desc" class="text-sm text-slate-400 leading-relaxed">
+                The ultimate contradiction of the isolationist methodology lies within the transmission node chain itself. Both the foundational text of the Quran and the auxiliary explanatory recordings of Hadith were carried across history via the exact same generational group of eyewitnesses (the Sahabah). 
+            </p>
+            <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-800/40">
+                <p id="p4-summary" class="text-xs font-medium text-slate-300 leading-relaxed italic">
+                    "To declare a source transmission mechanism completely compromised when detailing practical historical explanations, while concurrently declaring the exact same data tracking pipeline perfectly infallible when carrying structural verses, is an unsustainable epistemic model."
+                </p>
+            </div>
+        </section>
+
+        <!-- Dynamic Summary Reflection Box -->
+        <section id="reflection-box" class="bg-slate-950/40 border border-slate-800/80 rounded-3xl p-6 text-center space-y-3">
+            <p id="reflection-quote" class="text-slate-300 italic text-sm md:text-base max-w-2xl mx-auto">
+                "An authentic critique requires a unified model of analysis. We cannot break down the historical vehicle to isolate specific pieces of verified truth."
+            </p>
+            <div class="w-12 h-0.5 bg-indigo-500 mx-auto rounded-full"></div>
+            <p class="arabic-text text-xl text-indigo-400 font-medium">وَمَا يَنطِقُ عَنِ الْهَوَىٰ</p>
+        </section>
+
+    </main>
+
+    <!-- Global Layout Structural Footer -->
+    <footer class="border-t border-slate-900 py-12 text-center text-xs text-slate-600 relative z-10">
+        <p id="footer-text">© 2026 The Knowledge Hub. Immersive Educational Preservation Portal.</p>
+    </footer>
+
+    <!-- Comprehensive JavaScript Logic Matrix Engine -->
+    <script>
+        const langData = {
+            en: {
+                pageTitle: "The Epistemic Network: Hadith Preservation Framework",
+                brandText: "Haq Musalli Portal",
+                focusMode: "Focus Mode",
+                focusModeOn: "Focus Mode On",
+                heroBadge: "Module 03 Deep Dive",
+                heroTitle: "The Epistemic Network",
+                heroSubtitle: "Deconstructing Hadith rejection frameworks through systemic data verification and structural integration of revelation.",
+                backLink: "Return to Knowledge Hub Dashboard",
+                p1Title: "🛡️ 1. The Prophetic Premonition",
+                p1Desc: "The text architecture itself anticipated the emergence of absolute skepticism toward contextual data preservation models.",
+                p1Translation: `"Soon there will be a man reclining on his couch, who will be told a Hadith from me, and he will say: 'Between us and you is the Book of Allah, the Mighty and Sublime. What we find in it to be lawful, we take as lawful, and what we find to be unlawful, we take as unlawful.' Behold! What the Messenger of Allah has forbidden is like what Allah has forbidden."`,
+                p2Title: "📖 2. The Structural Mechanics of Hikmah",
+                p2Desc: "The linguistic framework of the Quran separates structural letters from practical definitions. The word 'Al-Kitab' (The Book) is paired concurrently with 'Al-Hikmah' (The Wisdom), establishing two distinct vectors of divine inspiration.",
+                p2Translation: `"Similarly, We have sent among you a Messenger from among yourselves, reciting to you Our verses and purifying you, and teaching you the Book and Wisdom, and teaching you that which you did not know."`,
+                p3Title: "🔄 3. Operational Mechanics vs. Abstract Generalization",
+                p3Desc: "A core systemic vulnerability within the Hadith rejection model is the operational deployment of baseline rituals. The Quran establishes structural requirements, while the Sunnah provides the exact execution criteria:",
+                mSalah: "Quran establishes the mandate of prayer; Hadith defines the precise sequential physical movements and structural timing configurations.",
+                mZakah: "Quran demands financial purification; Hadith provides the strict dynamic threshold parameters (Nisab) and computation matrix models.",
+                mHajj: "Quran outlines destination obligations; Hadith acts as the execution map template, charting structural rules of circumambulation.",
+                p4Title: "🧬 4. The Unified Transmission Dilemma",
+                p4Desc: "The ultimate contradiction of the isolationist methodology lies within the transmission node chain itself. Both the foundational text of the Quran and the auxiliary explanatory recordings of Hadith were carried across history via the exact same generational group of eyewitnesses (the Sahabah).",
+                p4Summary: `"To declare a source transmission mechanism completely compromised when detailing practical historical explanations, while concurrently declaring the exact same data tracking pipeline perfectly infallible when carrying structural verses, is an unsustainable epistemic model."`,
+                reflectionQuote: `"An authentic critique requires a unified model of analysis. We cannot break down the historical vehicle to isolate specific pieces of verified truth."`,
+                footerText: "© 2026 The Knowledge Hub. Immersive Educational Preservation Portal."
+            },
+            fr: {
+                pageTitle: "Le Réseau Épistémique : Cadre de Préservation du Hadith",
+                brandText: "Portail Haq Musalli",
+                focusMode: "Mode Concentration",
+                focusModeOn: "Mode Concentration Activé",
+                heroBadge: "Étude Approfondie - Module 03",
+                heroTitle: "Le Réseau Épistémique",
+                heroSubtitle: "Déconstruire les théories de rejet des Hadiths par la vérification systémique des données et l'intégration structurelle de la révélation.",
+                backLink: "Retour au Tableau de Bord de l'Espace Savoir",
+                p1Title: "🛡️ 1. La Prémonition Prophétique",
+                p1Desc: "L'architecture textuelle elle-même avait anticipé l'émergence d'un scepticisme absolu envers les modèles de préservation des données contextuelles.",
+                p1Translation: `"Bientôt, il y aura un homme assis confortablement sur son canapé, à qui l'on rapportera un de mes Hadiths et qui dira : 'Entre vous et nous, il y a le Livre d'Allah, le Puissant et Sublime. Ce que nous y trouvons de licite, nous le prenons pour licite, et ce que nous y trouvons d'interdit, nous le prenons pour interdit.' Prenez garde ! Ce que le Messager d'Allah a interdit est tout comme ce qu'Allah a interdit."`,
+                p2Title: "📖 2. La Mécanique Structurelle de la Hikmah",
+                p2Desc: "Le cadre linguistique du Coran sépare les lettres structurelles des définitions pratiques. Le mot 'Al-Kitab' (Le Livre) est associé de manière concurrente à 'Al-Hikmah' (La Sagesse), établissant ainsi deux vecteurs distincts de l'inspiration divine.",
+                p2Translation: `"Ainsi, Nous avons envoyé parmi vous un Messager de chez vous, qui vous récite Nos versets, vous purifie, vous enseigne Le Livre et la Sagesse, et vous enseigne ce que vous ne saviez pas."`,
+                p3Title: "🔄 3. Mécanique Opérationnelle vs Généralisation Abstraite",
+                p3Desc: "Une vulnérabilité systémique majeure du modèle de rejet des Hadiths réside dans le déploiement opérationnel des rituels de base. Le Coran fixe les obligations structurelles, tandis que la Sunnah fournit les critères d'exécution précis :",
+                mSalah: "Le Coran établit l'obligation de la prière ; le Hadith définit les mouvements physiques séquentiels précis et les configurations temporelles structurelles.",
+                mZakah: "Le Coran exige la purification financière ; le Hadith fournit les paramètres stricts du seuil dynamique (Nisab) et les matrices de calcul.",
+                mHajj: "Le Coran trace les obligations de destination ; le Hadith sert de modèle de carte d'exécution, détaillant les règles structurelles de la circumambulation.",
+                p4Title: "🧬 4. Le Dilemme de la Transmission Unifiée",
+                p4Desc: "La contradiction ultime de la méthodologie isolationniste réside au sein de la chaîne de transmission elle-même. Le texte fondateur du Coran et les enregistrements explicatifs subsidiaires du Hadith ont tous deux traversé l'histoire via le même groupe générationnel de témoins (les Sahabah).",
+                p4Summary: `"Déclarer un mécanisme de transmission de source complètement compromis lorsqu'il détaille des explications historiques pratiques, tout en déclarant simultanément ce même pipeline de suivi des données parfaitement infaillible lorsqu'il transporte des versets structurels, est un modèle épistémique insoutenable."`,
+                reflectionQuote: `"Une critique authentique exige un modèle d'analyse unifié. On ne peut démanteler le véhicule historique pour isoler des fragments choisis de vérité vérifiée."`,
+                footerText: "© 2026 L'Espace Savoir. Portail Immersif de Préservation Pédagogique."
+            },
+            ar: {
+                pageTitle: "شبكة الإبستمولوجيا: إطار حفظ الحديث النبوي الشريف",
+                brandText: "بوابة حق مصلي",
+                focusMode: "وضع التركيز",
+                focusModeOn: "وضع التركيز نشط",
+                heroBadge: "وحدة الغوص العميق - الوحدة ٠٣",
+                heroTitle: "الشَّبَكَةُ الإِبْسْتِمُولُوجِيَّة",
+                heroSubtitle: "تفكيك مناهج منكري الحديث من خلال أنظمة التحقق من البيانات والدمج البنيوي للوحيين.",
+                backLink: "العودة إلى لوحة تحكم مركز المعرفة",
+                p1Title: "🛡️ ١. النبوءة والتحذير النبوي",
+                p1Desc: "لقد توقعت بنية النص التشريعي نفسه ظهور موجات التشكيك المطلق في نماذج حفظ ونقل البيانات السياقية البيانية.",
+                p1Translation: `"يُوشِكُ الرَّجُلُ مُتَّكِئًا عَلَى أَرِيكَتِهِ يُحَدَّثُ بِحَدِيثٍ مِنْ حَدِيثِي فَيَقُولُ بَيْنَنَا وَبَيْنَكُمْ كِتَابُ اللَّهِ عَزَّ وَجَلَّ فَمَا وَجَدْنَا فِيهِ مِنْ حَلَالٍ اسْتَحْلَلْنَاهُ وَمَا وَجَدْنَا فِيهِ مِنْ حَرَامٍ حَرَّمْنَاهُ أَلاَ وَإِنَّ مَا حَرَّمَ رَسُولُ اللَّهِ مِثْلُ مَا حَرَّمَ اللَّهُ"`,
+                p2Title: "📖 ٢. البنية اللغوية والمفهومية للحكمة",
+                p2Desc: "يفصل الإطار اللغوي للقرآن الكريم بين الأحرف البنيوية والتعريفات الإجرائية التطبيقية. حيث تقترن كلمة 'الكتاب' بكلمة 'الحكمة' لتأكيد وجود مسارين متكاملين من الوحي الإلهي.",
+                p2Translation: `"كَمَا أَرْسَلْنَا فِيكُمْ رَسُولًا مِّنكُمْ يَتْلُو عَلَيْكُمْ آيَاتِنَا وَيُزَكِّيكُمْ وَيُعَلِّمُكُمُ الْكِتَابَ وَالْحِكْمَةَ وَيُعَلِّمُكُم مَّا لَمْ تَكُونُوا تَعْلَمُونَ"`,
+                p3Title: "🔄 ٣. آليات التشغيل الإجرائي مقابل الإجمال والتجريد",
+                p3Desc: "تظهر الفجوة التشغيلية القاتلة في منهج إنكار الحديث عند الانتقال للتطبيق العملي للفرائض الأساسية؛ فالقرآن يشرّع أصل الفريضة بينما تفصّل السنة آليات التنفيذ وعناصرها:",
+                mSalah: "فرض القرآن الصلاة بشكل مجمل؛ بينما حدد الحديث هيئاتها الحركية المتتابعة، عدد الركعات، ومواقيتها البنيوية الدقيقة.",
+                mZakah: "أمر القرآن بإيتاء الزكاة تطهيراً للمال؛ بينما حدد الحديث مقادير الأنصبة ومصفوفة الحساب الدقيقة وجدول المستحقين.",
+                mHajj: "حدد القرآن وجهة وميقات الحج الإجمالي؛ بينما رسمت السنة خارطة التنفيذ الميداني ومناسك الطواف والسعي تفصيلاً.",
+                p4Title: "🧬 ٤. معضلة شبكة النقل الموحدة",
+                p4Desc: "تكمن التناقض المعرفي الأكبر لمنهج العزل والإنكار في ذات سلسلة النقل والتوثيق الحركي؛ إذ إن القرآن الكريم والبيان النبوي نُقلا عبر التاريخ بواسطة نفس السلسلة البشرية الجيلية (الصحابة الكرام).",
+                p4Summary: `"إن إسقاط موثوقية شبكة النقل البشري عند نقل البيان التطبيقي والتاريخي، مع الإصرار على عصمتها ودقتها الرياضية المطلقة عند نقل النص القرآني، يمثل تناقضاً منهجياً يفكك البناء المعرفي من أساسه."`,
+                reflectionQuote: `"إن النقد المنهجي الأصيل يتطلب نموذجاً تحليلياً موحداً؛ فلا يمكن تدمير مركبة النقل التاريخية ثم ادعاء عزل أجزاء مصطفاة من الحقيقة المحفوظة عبرها."`,
+                footerText: "© ٢٠٢٦ مركز المعرفة. بوابة الحفظ التعليمية الشاملة."
+            }
+        };
+
+        let currentLang = 'en';
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            const data = langData[lang];
+            
+            document.getElementById('page-title').innerText = data.pageTitle;
+            document.documentElement.lang = lang;
+            
+            const contentContainer = document.getElementById('content-container');
+            const heroContainer = document.getElementById('hero-container');
+            const navHeader = document.getElementById('nav-header');
+            const reflectionBox = document.getElementById('reflection-box');
+            const backLinkContainer = document.getElementById('back-link-container');
+            const p1HeaderFlex = document.getElementById('p1-header-flex');
+            const p2HeaderFlex = document.getElementById('p2-header-flex');
+
+            if (lang === 'ar') {
+                contentContainer.style.direction = "rtl";
+                heroContainer.style.direction = "rtl";
+                navHeader.style.direction = "rtl";
+                contentContainer.classList.add('arabic-text', 'text-right');
+                heroContainer.classList.add('arabic-text');
+                navHeader.classList.add('arabic-text');
+                contentContainer.classList.remove('text-left');
+                reflectionBox.classList.add('text-right');
+                reflectionBox.classList.remove('text-left');
+                backLinkContainer.classList.remove('text-left');
+                backLinkContainer.classList.add('text-right');
+                p1HeaderFlex.classList.add('flex-row-reverse');
+                p2HeaderFlex.classList.add('flex-row-reverse');
+                document.querySelectorAll('.arabic-text').forEach(el => el.classList.remove('text-right')); 
+            } else {
+                contentContainer.style.direction = "ltr";
+                heroContainer.style.direction = "ltr";
+                navHeader.style.direction = "ltr";
+                contentContainer.classList.remove('arabic-text', 'text-right');
+                heroContainer.classList.remove('arabic-text');
+                navHeader.classList.remove('arabic-text');
+                contentContainer.classList.add('text-left');
+                reflectionBox.classList.remove('text-right');
+                reflectionBox.classList.add('text-left');
+                backLinkContainer.classList.add('text-left');
+                backLinkContainer.classList.remove('text-right');
+                p1HeaderFlex.classList.remove('flex-row-reverse');
+                p2HeaderFlex.classList.remove('flex-row-reverse');
+            }
+
+            // Map text data
+            document.getElementById('brand-text').innerText = data.brandText;
+            document.getElementById('focus-text').innerText = focusModeActive ? data.focusModeOn : data.focusMode;
+            document.getElementById('hero-badge').innerText = data.heroBadge;
+            document.getElementById('hero-title').innerText = data.heroTitle;
+            document.getElementById('hero-subtitle').innerText = data.heroSubtitle;
+            document.getElementById('back-link').innerText = data.backLink;
+
+            document.getElementById('p1-title').innerText = data.p1Title;
+            document.getElementById('p1-desc').innerText = data.p1Desc;
+            document.getElementById('p1-translation').innerText = data.p1Translation;
+
+            document.getElementById('p2-title').innerText = data.p2Title;
+            document.getElementById('p2-desc').innerText = data.p2Desc;
+            document.getElementById('p2-translation').innerText = data.p2Translation;
+
+            document.getElementById('p3-title').innerText = data.p3Title;
+            document.getElementById('p3-desc').innerText = data.p3Desc;
+            document.getElementById('m-salah').innerText = data.mSalah;
+            document.getElementById('m-zakah').innerText = data.mZakah;
+            document.getElementById('m-hajj').innerText = data.mHajj;
+
+            document.getElementById('p4-title').innerText = data.p4Title;
+            document.getElementById('p4-desc').innerText = data.p4Desc;
+            document.getElementById('p4-summary').innerText = data.p4Summary;
+
+            document.getElementById('reflection-quote').innerText = data.reflectionQuote;
+            document.getElementById('footer-text').innerText = data.footerText;
+
+            ['en', 'fr', 'ar'].forEach(l => {
+                const btn = document.getElementById(`lang-${l}-btn`);
+                if (l === lang) {
+                    btn.className = "text-xs px-2.5 py-1.5 rounded-md font-medium transition-all bg-emerald-500 text-slate-900 shadow-sm";
+                } else {
+                    btn.className = "text-xs px-2.5 py-1.5 rounded-md font-medium text-slate-400 hover:text-slate-200 transition-all";
+                }
+            });
+        }
+
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progress-bar').style.width = scrolled + "%";
+        });
+
+        let focusModeActive = false;
+        function toggleFocusMode() {
+            focusModeActive = !focusModeActive;
+            const body = document.getElementById('main-body');
+            const btn = document.getElementById('focus-btn');
+            const text = document.getElementById('focus-text');
+
+            if (focusModeActive) {
+                body.classList.remove('from-[#0B0F19]', 'via-[#111827]', 'to-[#030712]');
+                body.classList.add('from-[#04060C]', 'to-[#070A14]');
+                btn.classList.add('border-indigo-500', 'bg-indigo-950/40');
+                text.innerText = langData[currentLang].focusModeOn;
+            } else {
+                body.classList.remove('from-[#04060C]', 'to-[#070A14]');
+                body.classList.add('from-[#0B0F19]', 'via-[#111827]', 'to-[#030712]');
+                btn.classList.remove('border-indigo-500', 'bg-indigo-950/40');
+                text.innerText = langData[currentLang].focusMode;
+            }
+        }
+    </script>
+</body>
+</html>
