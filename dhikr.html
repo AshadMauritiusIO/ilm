@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sanctuary of Remembrance — Dhikr</title>
+    <!-- Google Fonts for elegant typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-primary: #f0f6fc;
+            --text-secondary: #8b949e;
+            --accent-gold: #e3b341;
+            --accent-green: #2ea043;
+            --border-color: #21262d;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 750px;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            letter-spacing: -0.5px;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            font-style: italic;
+        }
+
+        .section-divider {
+            text-align: center;
+            margin: 40px 0;
+            color: var(--accent-gold);
+            font-size: 1.2rem;
+            letter-spacing: 4px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 35px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            border-color: #30363d;
+        }
+
+        .meta {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--accent-gold);
+            font-weight: 600;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .meta::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background-color: var(--border-color);
+        }
+
+        .arabic {
+            font-family: 'Amiri', serif;
+            font-size: 1.95rem;
+            text-align: right;
+            direction: rtl;
+            line-height: 2.2;
+            color: #ffffff;
+            margin-bottom: 25px;
+            word-spacing: 4px;
+        }
+
+        .transliteration {
+            font-size: 0.95rem;
+            color: var(--accent-gold);
+            font-style: italic;
+            opacity: 0.85;
+            margin-bottom: 15px;
+        }
+
+        .translation {
+            font-size: 1.1rem;
+            color: #e6edf3;
+            font-weight: 400;
+        }
+
+        .reflection-note {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px dashed var(--border-color);
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        /* Responsive optimizations */
+        @media (max-width: 600px) {
+            body { padding: 20px 10px; }
+            .card { padding: 20px; }
+            .arabic { font-size: 1.65rem; }
+            header h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1>The Sanctuary of Mindfulness</h1>
+            <p>Finding stillness, presence, and divine connection through Remembrance (Dhikr)</p>
+        </header>
+
+        <!-- Quran Verse 1 -->
+        <div class="card">
+            <div class="meta">Surah Al-Baqarah (2:152)</div>
+            <div class="arabic">فَاذْكُرُونِي أَذْكُرْكُمْ وَاشْكُرُوا لِي وَلَا تَكْفُرُونِ</div>
+            <div class="transliteration">"Fadhkuroonee adhkurkum washkuroo lee wala takfuroon"</div>
+            <div class="translation">"So remember Me; I will remember you. And be grateful to Me and do not deny Me."</div>
+            <div class="reflection-note">
+                <strong>Mindful Reflection:</strong> A beautiful cosmic reality. The moment your heart consciously reaches out to the Divine, you are simultaneously being spoken of and remembered by the Creator of existence.
+            </div>
+        </div>
+
+        <!-- Quran Verse 2 -->
+        <div class="card">
+            <div class="meta">Surah Ar-Ra'd (13:28)</div>
+            <div class="arabic">الَّذِينَ آمَنُوا وَتَتْمَئِنُّ قُلُوبُهُم بِذِكْرِ اللَّهِ ۗ أَلَا بِذِكْرِ اللَّهِ تَتْمَئِنُّ الْقُلُوبُ</div>
+            <div class="transliteration">"Allatheena amanoo watatmainnu quloobuhum bithikri Allahi ala bithikri Allahi tatmainnu alquloob"</div>
+            <div class="translation">"Those who have believed and whose hearts find rest in the remembrance of Allah. Unquestionably, by the remembrance of Allah do hearts find rest."</div>
+            <div class="reflection-note">
+                <strong>Mindful Reflection:</strong> True inner stillness cannot be manufactured by worldly means. The soul naturally settles into profound tranquility only when it aligns back to its Source.
+            </div>
+        </div>
+
+        <div class="section-divider">❖ ❖ ❖</div>
+
+        <!-- Hadith Qudsi Card (Directly relating to your image theme) -->
+        <div class="card">
+            <div class="meta">Hadith Qudsi — Sahih Bukhari</div>
+            <div class="arabic">يَقُولُ اللَّهُ تَعَالَى أَنَا عِنْدَ ظَنِّ عَبْدِي بِي وَأَنَا مَعَهُ إِذَا ذَكَرَنِي فَإِنْ ذَكَرَنِي فِي نَفْسِهِ ذَكَرْتُهُ فِي نَفْسِي وَإِنْ ذَكَرَنِي فِي مَلَإٍ ذَكَرْتُهُ فِي مَلَإٍ خَيْرٍ مِنْهُمْ</div>
+            <div class="transliteration">"Yaqoolu Allahu ta'ala: Ana 'inda zhanni 'abdee bee, wa ana ma'ahu idha dhakaranee. Fa in dhakaranee fee nafsihi, dhakartuhu fee nafsee. Wa in dhakaranee fee mala'in, dhakartuhu fee mala'in khayrin minhum..."</div>
+            <div class="translation">"Allah Almighty says: 'I am as My servant expects of Me, and I am with him when he remembers Me. If he remembers Me inwardly within himself, I will remember him within Myself. If he mentions Me in a gathering, I will mention him in a gathering far greater than them...'"</div>
+            <div class="reflection-note">
+                <strong>Mindful Reflection:</strong> This authentic companion piece to Sunan Ibn Majah 3792 illuminates how dynamic your relationship with Allah is. If you move toward Him walking, He meets you running. Your perception of His mercy dictates how you will experience it.
+            </div>
+        </div>
+
+        <footer>
+            <p>“Keep your tongue moist with the remembrance of God.”</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
